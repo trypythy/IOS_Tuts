@@ -1,9 +1,4 @@
-//
-//  RoortPageViewController.swift
-//  wip_meenagram
-//
-//  Created by Ameenah Burhan on 1/15/17.
-//  Copyright © 2017 Meena LLC. All rights reserved.
+
 //
 
 import UIKit
