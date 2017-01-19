@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RootPageViewController.swift"
+            timestampString = "506219633.692142"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "RootPageViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wip_meenagram.RootPageViewController.init (transitionStyle : __C.UIPageViewControllerTransitionStyle, navigationOrientation : __C.UIPageViewControllerNavigationOrientation, options : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) -&gt; wip_meenagram.RootPageViewController"
+                  moduleName = "wip_meenagram"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ameenah_burhan/Development/wip_meenagram/RootPageViewController.swift"
+                  timestampString = "506221439.937295"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wip_meenagram.RootPageViewController.__allocating_init (transitionStyle : __C.UIPageViewControllerTransitionStyle, navigationOrientation : __C.UIPageViewControllerNavigationOrientation, options : Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) -&gt; wip_meenagram.RootPageViewController"
+                  moduleName = "wip_meenagram"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ameenah_burhan/Development/wip_meenagram/RootPageViewController.swift"
+                  timestampString = "506221439.939422"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "10">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wip_meenagram.RootPageViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;wip_meenagram.RootPageViewController&gt;"
+                  moduleName = "wip_meenagram"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ameenah_burhan/Development/wip_meenagram/RootPageViewController.swift"
+                  timestampString = "506221439.941539"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wip_meenagram.RootPageViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;wip_meenagram.RootPageViewController&gt;"
+                  moduleName = "wip_meenagram"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ameenah_burhan/Development/wip_meenagram/RootPageViewController.swift"
+                  timestampString = "506221439.943911"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
