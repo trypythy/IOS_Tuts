@@ -4,7 +4,7 @@
 import UIKit
 
 class RootPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
-    
+  
     lazy var vcArray: [UIViewController] = {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -14,18 +14,22 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDataSour
         
         return [appVC, camVC, messVC]
     }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.dataSource  = self
         self.delegate = self
-        
-        if let firstViewController = self.vcArray.first{
+            if let firstViewController = self.vcArray.first{
             self.setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
         
     }
     
+    
+    
+        
+
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?{
         guard let vcIndex = vcArray.index(of: viewController) else {    return nil  }
         
