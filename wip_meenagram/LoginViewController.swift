@@ -14,6 +14,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+    }
+    override func viewDidAppear(_ animated: Bool) {
         
         if FIRAuth.auth()?.currentUser?.uid != nil{
             goToHome()
