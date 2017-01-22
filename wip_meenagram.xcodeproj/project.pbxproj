@@ -21,7 +21,7 @@
 		2459F0611E2D618400B67E3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2459F0601E2D618400B67E3A /* GoogleService-Info.plist */; };
 		E5C2A57B1E31378600D35127 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C2A57A1E31378600D35127 /* RootPageViewController.swift */; };
 		E5C2A57D1E31383E00D35127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C2A57C1E31383E00D35127 /* Main.storyboard */; };
-		E5CBD0B61E33012D0094329C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CBD0B51E33012D0094329C /* LoginViewController.swift */; };
+		E5D7ADF51E342FF30008109B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D7ADF41E342FF30008109B /* LoginViewController.swift */; };
 		E5EE01E01E318F9E00A1EF90 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE01DF1E318F9E00A1EF90 /* SignupViewController.swift */; };
 		F2F767BCF2EAF39CB1EE4031 /* Pods_wip_meenagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CC16813EA43DB19E015A38 /* Pods_wip_meenagram.framework */; };
 /* End PBXBuildFile section */
@@ -47,7 +47,7 @@
 		249D85731E3047DF00AFF5D1 /* wip_meenagram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wip_meenagram.entitlements; sourceTree = "<group>"; };
 		E5C2A57A1E31378600D35127 /* RootPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
 		E5C2A57C1E31383E00D35127 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
-		E5CBD0B51E33012D0094329C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E5D7ADF41E342FF30008109B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E5EE01DF1E318F9E00A1EF90 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,10 +87,10 @@
 				242F07BD1E2C4A5500400462 /* AppDelegate.swift */,
 				E5C2A57A1E31378600D35127 /* RootPageViewController.swift */,
 				E5EE01DF1E318F9E00A1EF90 /* SignupViewController.swift */,
+				E5D7ADF41E342FF30008109B /* LoginViewController.swift */,
 				2459F0601E2D618400B67E3A /* GoogleService-Info.plist */,
 				249D85731E3047DF00AFF5D1 /* wip_meenagram.entitlements */,
 				E5C2A57C1E31383E00D35127 /* Main.storyboard */,
-				E5CBD0B51E33012D0094329C /* LoginViewController.swift */,
 				242F07C41E2C4A5600400462 /* Assets.xcassets */,
 				2459F0591E2D39F700B67E3A /*  supporting images */,
 				242F07C61E2C4A5600400462 /* LaunchScreen.storyboard */,
@@ -268,7 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5CBD0B61E33012D0094329C /* LoginViewController.swift in Sources */,
+				E5D7ADF51E342FF30008109B /* LoginViewController.swift in Sources */,
 				E5EE01E01E318F9E00A1EF90 /* SignupViewController.swift in Sources */,
 				242F07BE1E2C4A5500400462 /* AppDelegate.swift in Sources */,
 				E5C2A57B1E31378600D35127 /* RootPageViewController.swift in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nV6-5c-DPB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nV6-5c-DPB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -106,7 +106,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginButtonAction:" destination="nV6-5c-DPB" eventType="touchUpInside" id="E3E-6e-Rhf"/>
+                                    <action selector="loginButtonAction:" destination="nV6-5c-DPB" eventType="touchUpInside" id="QE4-CJ-NKn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLG-pW-K1e">
@@ -128,8 +128,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="emailText" destination="nkB-8E-06M" id="uVM-vx-tMF"/>
-                        <outlet property="passwordText" destination="TL7-iE-R1f" id="cIy-6r-Q9e"/>
+                        <outlet property="emailText" destination="nkB-8E-06M" id="qV9-GS-ikm"/>
+                        <outlet property="passwordText" destination="TL7-iE-R1f" id="jZp-xE-BfG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BpM-Ak-Ue8" userLabel="First Responder" sceneMemberID="firstResponder"/>
