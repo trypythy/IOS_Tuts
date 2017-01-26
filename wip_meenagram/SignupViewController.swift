@@ -5,8 +5,10 @@
 import UIKit
 import Firebase
 
+
 class SignupViewController: UIViewController {
 
+    var databaseRef: FIRDatabaseReference!
 
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
@@ -14,7 +16,8 @@ class SignupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        databaseRef = FIRDatabase.database().reference()
         
     }
     
@@ -24,6 +27,7 @@ class SignupViewController: UIViewController {
         if error != nil{
             print(error!)
         }else{
+            //self.createProfile()
             let homePVC = RootPageViewController()
             self.present(homePVC, animated: true, completion: nil )
         }
@@ -34,6 +38,10 @@ class SignupViewController: UIViewController {
         //TODO: Create user profile
     }
     
+    func createProfile(_ user: FIRUser){
+        
+        
+    }
     @IBAction func signupButtonAction(_ sender: Any) {
         signup()
         

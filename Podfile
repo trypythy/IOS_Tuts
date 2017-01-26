@@ -10,5 +10,6 @@ target 'wip_meenagram' do
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
+  pod ‘GoogleSignIn’
 
 end

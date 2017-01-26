@@ -19,9 +19,10 @@
 		2459F05E1E2D3CAC00B67E3A /* ic_add_a_photo_18pt_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2459F05B1E2D3CAC00B67E3A /* ic_add_a_photo_18pt_3x.png */; };
 		2459F05F1E2D3CAC00B67E3A /* ic_add_a_photo_18pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 2459F05C1E2D3CAC00B67E3A /* ic_add_a_photo_18pt.png */; };
 		2459F0611E2D618400B67E3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2459F0601E2D618400B67E3A /* GoogleService-Info.plist */; };
+		E547B5731E39809E00F2075B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E547B5721E39809E00F2075B /* LoginViewController.swift */; };
+		E55C361A1E38389E0026E90E /* MainAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C36191E38389E0026E90E /* MainAppViewController.swift */; };
 		E5C2A57B1E31378600D35127 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C2A57A1E31378600D35127 /* RootPageViewController.swift */; };
 		E5C2A57D1E31383E00D35127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C2A57C1E31383E00D35127 /* Main.storyboard */; };
-		E5D7ADF51E342FF30008109B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D7ADF41E342FF30008109B /* LoginViewController.swift */; };
 		E5EE01E01E318F9E00A1EF90 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE01DF1E318F9E00A1EF90 /* SignupViewController.swift */; };
 		F2F767BCF2EAF39CB1EE4031 /* Pods_wip_meenagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CC16813EA43DB19E015A38 /* Pods_wip_meenagram.framework */; };
 /* End PBXBuildFile section */
@@ -45,9 +46,10 @@
 		2459F05C1E2D3CAC00B67E3A /* ic_add_a_photo_18pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_add_a_photo_18pt.png; sourceTree = "<group>"; };
 		2459F0601E2D618400B67E3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		249D85731E3047DF00AFF5D1 /* wip_meenagram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wip_meenagram.entitlements; sourceTree = "<group>"; };
+		E547B5721E39809E00F2075B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E55C36191E38389E0026E90E /* MainAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAppViewController.swift; sourceTree = "<group>"; };
 		E5C2A57A1E31378600D35127 /* RootPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
 		E5C2A57C1E31383E00D35127 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
-		E5D7ADF41E342FF30008109B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E5EE01DF1E318F9E00A1EF90 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,9 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				242F07BD1E2C4A5500400462 /* AppDelegate.swift */,
+				E547B5721E39809E00F2075B /* LoginViewController.swift */,
 				E5C2A57A1E31378600D35127 /* RootPageViewController.swift */,
+				E55C36191E38389E0026E90E /* MainAppViewController.swift */,
 				E5EE01DF1E318F9E00A1EF90 /* SignupViewController.swift */,
-				E5D7ADF41E342FF30008109B /* LoginViewController.swift */,
 				2459F0601E2D618400B67E3A /* GoogleService-Info.plist */,
 				249D85731E3047DF00AFF5D1 /* wip_meenagram.entitlements */,
 				E5C2A57C1E31383E00D35127 /* Main.storyboard */,
@@ -166,6 +169,7 @@
 				TargetAttributes = {
 					242F07B91E2C4A5500400462 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y4SR2WZDLM;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -268,10 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5D7ADF51E342FF30008109B /* LoginViewController.swift in Sources */,
 				E5EE01E01E318F9E00A1EF90 /* SignupViewController.swift in Sources */,
 				242F07BE1E2C4A5500400462 /* AppDelegate.swift in Sources */,
 				E5C2A57B1E31378600D35127 /* RootPageViewController.swift in Sources */,
+				E547B5731E39809E00F2075B /* LoginViewController.swift in Sources */,
+				E55C361A1E38389E0026E90E /* MainAppViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = wip_meenagram/wip_meenagram.entitlements;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Y4SR2WZDLM;
 				INFOPLIST_FILE = wip_meenagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.meenabeans.wip-meenagram";
@@ -401,7 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = wip_meenagram/wip_meenagram.entitlements;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Y4SR2WZDLM;
 				INFOPLIST_FILE = wip_meenagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.meenabeans.wip-meenagram";

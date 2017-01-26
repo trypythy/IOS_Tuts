@@ -28,6 +28,14 @@
 				<string>com.meenabeans.wip-meenagram</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.988921225957-i3777o3veu3vthrq0qp8c8tl67rulcco</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
