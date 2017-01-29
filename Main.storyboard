@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XgH-Pl-zaj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1436" y="168.6656671664168"/>
+            <point key="canvasLocation" x="-1270" y="580"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="sPw-wm-1aT">
@@ -117,17 +117,11 @@
                                     <segue destination="x9g-R0-5rl" kind="show" id="mdb-CK-WAR"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l1p-ch-u3v" customClass="GIDSignInButton">
-                                <rect key="frame" x="84" y="402" width="207" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="emailText" destination="dmU-jS-ySJ" id="tEe-JP-N50"/>
-                        <outlet property="googleSignInButton" destination="l1p-ch-u3v" id="WlH-e8-wb5"/>
                         <outlet property="passwordText" destination="Yt1-a6-EOi" id="f0D-MQ-Bfg"/>
                     </connections>
                 </viewController>
@@ -181,7 +175,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="logout:" destination="Fcy-3j-Fhd" eventType="touchUpInside" id="XG0-ar-GjA"/>
+                                    <action selector="logoutAction:" destination="Fcy-3j-Fhd" eventType="touchUpInside" id="gJF-wn-Db2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -190,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kh-29-qxk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1964" y="163.26836581709148"/>
+            <point key="canvasLocation" x="1975" y="154"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="t9F-iG-wbO">

@@ -21,29 +21,42 @@ class SignupViewController: UIViewController {
         
     }
     
-    func signup(){
+    func signup(email:String, password:String){
        FIRAuth.auth()?.createUser(withEmail: emailText.text!, password: passwordText.text!, completion: { (user, error) in
         
         if error != nil{
             print(error!)
+            return
         }else{
-            //self.createProfile()
+            
+            self.createProfile(user!)
             let homePVC = RootPageViewController()
             self.present(homePVC, animated: true, completion: nil )
         }
        })
     }
     
-    func setupProfile(){
-        //TODO: Create user profile
+    func createProfile(_ user: FIRUser){
+        let delimiter = "@"
+        let email = user.email
+        let uName = email?.components(separatedBy: delimiter)
+        let newUser = ["username": uName?[0],
+                       "email": user.email,
+                       "photo": "https://firebasestorage.googleapis.com/v0/b/meenagram-ac342.appspot.com/o/empty-profile.png?alt=media&token=0885c80a-8eab-4e66-a9d4-548d5527b773"]
+        
+        self.databaseRef.child("profile").child(user.uid).updateChildValues(newUser) { (error, ref) in
+            if error != nil{
+                print(error!)
+                return
+            }
+            print("Profile successfully created")
+        }
+
     }
     
-    func createProfile(_ user: FIRUser){
-        
-        
-    }
     @IBAction func signupButtonAction(_ sender: Any) {
-        signup()
+        guard let email = emailText.text, let password = passwordText.text else{return}
+        signup(email: email, password: password)
         
     }
 

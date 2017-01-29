@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BD232A31FD84946FFA9A44B4BAE12EF"
+               BlueprintIdentifier = "CC9EE24199AD45DDEE461FAF571B854C"
                BuildableName = "Pods_wip_meenagram.framework"
                BlueprintName = "Pods-wip_meenagram"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BD232A31FD84946FFA9A44B4BAE12EF"
+            BlueprintIdentifier = "CC9EE24199AD45DDEE461FAF571B854C"
             BuildableName = "Pods_wip_meenagram.framework"
             BlueprintName = "Pods-wip_meenagram"
             ReferencedContainer = "container:Pods.xcodeproj">
