@@ -44,7 +44,7 @@ class SignupViewController: UIViewController {
                        "email": user.email,
                        "photo": "https://firebasestorage.googleapis.com/v0/b/meenagram-ac342.appspot.com/o/empty-profile.png?alt=media&token=0885c80a-8eab-4e66-a9d4-548d5527b773"]
         
-        self.databaseRef.child("profile").child(user.uid).updateChildValues(newUser) { (error, ref) in
+        self.databaseRef.child("profiles").child(user.uid).updateChildValues(newUser) { (error, ref) in
             if error != nil{
                 print(error!)
                 return
