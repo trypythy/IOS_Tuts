@@ -22,7 +22,7 @@ class SignupViewController: UIViewController {
     }
     
     func signup(email:String, password:String){
-       FIRAuth.auth()?.createUser(withEmail: emailText.text!, password: passwordText.text!, completion: { (user, error) in
+       FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
         
         if error != nil{
             print(error!)
