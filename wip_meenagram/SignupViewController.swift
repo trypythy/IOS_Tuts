@@ -40,7 +40,7 @@ class SignupViewController: UIViewController {
         let delimiter = "@"
         let email = user.email
         let uName = email?.components(separatedBy: delimiter)
-        let newUser = ["username": uName?[0],
+        let newUser = ["username": uName?[0] ?? "username" ,
                        "email": user.email,
                        "photo": "https://firebasestorage.googleapis.com/v0/b/meenagram-ac342.appspot.com/o/empty-profile.png?alt=media&token=0885c80a-8eab-4e66-a9d4-548d5527b773"]
         
