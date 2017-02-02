@@ -26,6 +26,7 @@
 		E55C361A1E38389E0026E90E /* MainAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C36191E38389E0026E90E /* MainAppViewController.swift */; };
 		E5C2A57B1E31378600D35127 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C2A57A1E31378600D35127 /* RootPageViewController.swift */; };
 		E5C2A57D1E31383E00D35127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C2A57C1E31383E00D35127 /* Main.storyboard */; };
+		E5DDF6F51E42A8B100C706DC /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DDF6F41E42A8B100C706DC /* TestViewController.swift */; };
 		E5EE01E01E318F9E00A1EF90 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE01DF1E318F9E00A1EF90 /* SignupViewController.swift */; };
 		F2F767BCF2EAF39CB1EE4031 /* Pods_wip_meenagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CC16813EA43DB19E015A38 /* Pods_wip_meenagram.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,8 @@
 		E55C36191E38389E0026E90E /* MainAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAppViewController.swift; sourceTree = "<group>"; };
 		E5C2A57A1E31378600D35127 /* RootPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
 		E5C2A57C1E31383E00D35127 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		E5DDF6F41E42A8B100C706DC /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		E5DDF6F81E42B6E900C706DC /* wip_meenagram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wip_meenagram-Bridging-Header.h"; sourceTree = "<group>"; };
 		E5EE01DF1E318F9E00A1EF90 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,11 +104,13 @@
 				2459F0601E2D618400B67E3A /* GoogleService-Info.plist */,
 				249D85731E3047DF00AFF5D1 /* wip_meenagram.entitlements */,
 				E5C2A57C1E31383E00D35127 /* Main.storyboard */,
+				E5DDF6F41E42A8B100C706DC /* TestViewController.swift */,
 				242F07C41E2C4A5600400462 /* Assets.xcassets */,
 				2459F0591E2D39F700B67E3A /*  supporting images */,
 				242F07C61E2C4A5600400462 /* LaunchScreen.storyboard */,
 				242F07C91E2C4A5600400462 /* Info.plist */,
 				E53249E41E3E992F0015FF84 /* User.swift */,
+				E5DDF6F81E42B6E900C706DC /* wip_meenagram-Bridging-Header.h */,
 			);
 			path = wip_meenagram;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 					242F07B91E2C4A5500400462 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Y4SR2WZDLM;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -288,6 +294,7 @@
 				E5C2A57B1E31378600D35127 /* RootPageViewController.swift in Sources */,
 				E547B5731E39809E00F2075B /* LoginViewController.swift in Sources */,
 				E508ADAB1E414D11004C549B /* ProfileViewController.swift in Sources */,
+				E5DDF6F51E42A8B100C706DC /* TestViewController.swift in Sources */,
 				E55C361A1E38389E0026E90E /* MainAppViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,12 +409,15 @@
 			baseConfigurationReference = 014358C9624754B82D5F5AA1 /* Pods-wip_meenagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = wip_meenagram/wip_meenagram.entitlements;
 				DEVELOPMENT_TEAM = Y4SR2WZDLM;
 				INFOPLIST_FILE = wip_meenagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.meenabeans.wip-meenagram";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "wip_meenagram/wip_meenagram-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -417,12 +427,14 @@
 			baseConfigurationReference = 0F89B89F70D248E97525220A /* Pods-wip_meenagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = wip_meenagram/wip_meenagram.entitlements;
 				DEVELOPMENT_TEAM = Y4SR2WZDLM;
 				INFOPLIST_FILE = wip_meenagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.meenabeans.wip-meenagram";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "wip_meenagram/wip_meenagram-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

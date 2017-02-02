@@ -46,6 +46,7 @@ class ProfileViewController: UIViewController {
                 self.displayNameText.text = username
             }) { (error) in
                 print(error.localizedDescription)
+                return
             }
         }
     }
