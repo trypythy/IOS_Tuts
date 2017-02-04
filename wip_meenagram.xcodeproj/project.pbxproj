@@ -101,6 +101,7 @@
 				E5C2A57A1E31378600D35127 /* RootPageViewController.swift */,
 				E55C36191E38389E0026E90E /* MainAppViewController.swift */,
 				E508ADAA1E414D11004C549B /* ProfileViewController.swift */,
+				E508ADA81E40278B004C549B /* EditProfileViewController.swift */,
 				2459F0601E2D618400B67E3A /* GoogleService-Info.plist */,
 				249D85731E3047DF00AFF5D1 /* wip_meenagram.entitlements */,
 				E5C2A57C1E31383E00D35127 /* Main.storyboard */,
@@ -118,7 +119,6 @@
 		2459F0591E2D39F700B67E3A /*  supporting images */ = {
 			isa = PBXGroup;
 			children = (
-				E508ADA81E40278B004C549B /* EditProfileViewController.swift */,
 				2459F05A1E2D3CAC00B67E3A /* ic_add_a_photo_18pt_2x.png */,
 				2459F05B1E2D3CAC00B67E3A /* ic_add_a_photo_18pt_3x.png */,
 				2459F05C1E2D3CAC00B67E3A /* ic_add_a_photo_18pt.png */,

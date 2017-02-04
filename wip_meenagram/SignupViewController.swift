@@ -9,6 +9,7 @@ import Firebase
 class SignupViewController: UIViewController {
 
     var databaseRef: FIRDatabaseReference!
+    
 
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
@@ -39,10 +40,10 @@ class SignupViewController: UIViewController {
     func createProfile(_ user: FIRUser){
         let delimiter = "@"
         let email = user.email
-        let uName = email?.components(separatedBy: delimiter)
-        let newUser = ["username": uName?[0] ?? "username" ,
-                       "email": user.email,
-                       "photo": "https://firebasestorage.googleapis.com/v0/b/meenagram-ac342.appspot.com/o/empty-profile.png?alt=media&token=0885c80a-8eab-4e66-a9d4-548d5527b773"]
+        let uName = email!.components(separatedBy: delimiter)
+    
+        let newUser:[String: String] = ["username": uName[0],
+                       "email": user.email!]
         
         self.databaseRef.child("profiles").child(user.uid).updateChildValues(newUser) { (error, ref) in
             if error != nil{

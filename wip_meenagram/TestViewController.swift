@@ -31,6 +31,7 @@ class TestViewController: UIViewController {
     func loadFromSDWebImage(){
         let sdStartTime = NSDate.timeIntervalSinceReferenceDate
         if let userID = FIRAuth.auth()?.currentUser?.uid{
+            print(userID)
             let refToImage = "https://firebasestorage.googleapis.com/v0/b/meenagram-ac342.appspot.com/o/Grumpy_Cat.jpg?alt=media&token=5a5f2ac9-708e-4a31-a4d2-9e3a1eb33447"
         
             storageImageView.sd_setImage(with: URL(string: refToImage))
