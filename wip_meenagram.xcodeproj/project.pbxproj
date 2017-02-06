@@ -26,6 +26,7 @@
 		E55C361A1E38389E0026E90E /* MainAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C36191E38389E0026E90E /* MainAppViewController.swift */; };
 		E5C2A57B1E31378600D35127 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C2A57A1E31378600D35127 /* RootPageViewController.swift */; };
 		E5C2A57D1E31383E00D35127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C2A57C1E31383E00D35127 /* Main.storyboard */; };
+		E5C9C7F41E4691A8005FF3CF /* EditProViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C9C7F31E4691A8005FF3CF /* EditProViewController.swift */; };
 		E5DDF6F51E42A8B100C706DC /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DDF6F41E42A8B100C706DC /* TestViewController.swift */; };
 		E5EE01E01E318F9E00A1EF90 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EE01DF1E318F9E00A1EF90 /* SignupViewController.swift */; };
 		F2F767BCF2EAF39CB1EE4031 /* Pods_wip_meenagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CC16813EA43DB19E015A38 /* Pods_wip_meenagram.framework */; };
@@ -57,6 +58,7 @@
 		E55C36191E38389E0026E90E /* MainAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAppViewController.swift; sourceTree = "<group>"; };
 		E5C2A57A1E31378600D35127 /* RootPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
 		E5C2A57C1E31383E00D35127 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		E5C9C7F31E4691A8005FF3CF /* EditProViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProViewController.swift; sourceTree = "<group>"; };
 		E5DDF6F41E42A8B100C706DC /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		E5DDF6F81E42B6E900C706DC /* wip_meenagram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wip_meenagram-Bridging-Header.h"; sourceTree = "<group>"; };
 		E5EE01DF1E318F9E00A1EF90 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -101,10 +103,10 @@
 				E5C2A57A1E31378600D35127 /* RootPageViewController.swift */,
 				E55C36191E38389E0026E90E /* MainAppViewController.swift */,
 				E508ADAA1E414D11004C549B /* ProfileViewController.swift */,
-				E508ADA81E40278B004C549B /* EditProfileViewController.swift */,
 				2459F0601E2D618400B67E3A /* GoogleService-Info.plist */,
 				249D85731E3047DF00AFF5D1 /* wip_meenagram.entitlements */,
 				E5C2A57C1E31383E00D35127 /* Main.storyboard */,
+				E5C9C7F31E4691A8005FF3CF /* EditProViewController.swift */,
 				E5DDF6F41E42A8B100C706DC /* TestViewController.swift */,
 				242F07C41E2C4A5600400462 /* Assets.xcassets */,
 				2459F0591E2D39F700B67E3A /*  supporting images */,
@@ -119,6 +121,7 @@
 		2459F0591E2D39F700B67E3A /*  supporting images */ = {
 			isa = PBXGroup;
 			children = (
+				E508ADA81E40278B004C549B /* EditProfileViewController.swift */,
 				2459F05A1E2D3CAC00B67E3A /* ic_add_a_photo_18pt_2x.png */,
 				2459F05B1E2D3CAC00B67E3A /* ic_add_a_photo_18pt_3x.png */,
 				2459F05C1E2D3CAC00B67E3A /* ic_add_a_photo_18pt.png */,
@@ -293,6 +296,7 @@
 				E53249E51E3E992F0015FF84 /* User.swift in Sources */,
 				E5C2A57B1E31378600D35127 /* RootPageViewController.swift in Sources */,
 				E547B5731E39809E00F2075B /* LoginViewController.swift in Sources */,
+				E5C9C7F41E4691A8005FF3CF /* EditProViewController.swift in Sources */,
 				E508ADAB1E414D11004C549B /* ProfileViewController.swift in Sources */,
 				E5DDF6F51E42A8B100C706DC /* TestViewController.swift in Sources */,
 				E55C361A1E38389E0026E90E /* MainAppViewController.swift in Sources */,
