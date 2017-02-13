@@ -92,7 +92,6 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         
     }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        print("picker did cancel")
         dismiss(animated: true, completion: nil)
         
     }
@@ -139,15 +138,32 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
                 
             }
         
-            //save username text to database
-            //save display name text to database
-            //save bio to database
-            //update users profile in the database
         }
-    }
     
-    func maxTextLength(){
-        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }
 }
 
