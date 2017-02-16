@@ -30,20 +30,20 @@ class EditProViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBAction func saveProfileData(_ sender: Any) {
         updateUsersProfile()
     }
+    @IBAction func cancel(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
    
     func updateUsersProfile(){
       //check to see if the user is logged in
         if let userID = FIRAuth.auth()?.currentUser?.uid{
-        print(userID)
-        //create an access point the Firebase storage
+        //create an access point for the Firebase storage
             let storageItem = storageRef.child("profile_images").child(userID)
         //get the image uploaded from photo library
-            guard let image = self.profileImageView.image else {return}
-            if let uploadImage = UIImagePNGRepresentation(image){
-                
-            
+            guard let image = profileImageView.image else {return}
+            if let newImage = UIImagePNGRepresentation(image){
         //upload to firebase storage
-                storageItem.put(uploadImage, metadata: nil, completion: { (metadata, error) in
+                storageItem.put(newImage, metadata: nil, completion: { (metadata, error) in
                     if error != nil{
                         print(error!)
                         return
@@ -53,31 +53,32 @@ class EditProViewController: UIViewController, UIImagePickerControllerDelegate, 
                             print(error!)
                             return
                         }
-                      
-                        if let urlText = url?.absoluteString{
-                            guard let newUsername = self.usernameText.text else {return}
-                            guard let newDisplayName = self.displayNameText.text else{ return}
+                        if let profilePhotoURL = url?.absoluteString{
+                            guard let newUserName  = self.usernameText.text else {return}
+                            guard let newDisplayName = self.displayNameText.text else {return}
                             guard let newBioText = self.bioText.text else {return}
-                        
-                        let newValuesForProfile =
-                        ["photo": urlText, "username": newUsername,
-                        "display": newDisplayName, "bio": newBioText]
-                          //update the firebase database for that user
                             
-                        self.databaseRef.child("profile").child(userID).updateChildValues(newValuesForProfile, withCompletionBlock: { (error, ref) in
-                            if error != nil{
-                                print(error!)
-                                return
-                            }
-                            print("Profile Successfully Updated")
-                        })
-                        }//url Text end
+                            let newValuesForProfile =
+                            ["photo": profilePhotoURL,
+                             "username": newUserName,
+                             "display": newDisplayName,
+                             "bio": newBioText]
+                            
+                            //update the firebase database for that user
+                            self.databaseRef.child("profile").child(userID).updateChildValues(newValuesForProfile, withCompletionBlock: { (error, ref) in
+                                if error != nil{
+                                    print(error!)
+                                    return
+                                }
+                                print("Profile Successfully Update")
+                            })
+                            
+                        }
                     })
                 })
-
+      
             }
         }
-        
     }
     
     
