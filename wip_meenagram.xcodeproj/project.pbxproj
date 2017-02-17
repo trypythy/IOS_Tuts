@@ -23,6 +23,7 @@
 		E508ADAB1E414D11004C549B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E508ADAA1E414D11004C549B /* ProfileViewController.swift */; };
 		E53249E51E3E992F0015FF84 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53249E41E3E992F0015FF84 /* User.swift */; };
 		E547B5731E39809E00F2075B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E547B5721E39809E00F2075B /* LoginViewController.swift */; };
+		E553E5061E5660A00060E2E3 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E5051E5660A00060E2E3 /* CameraViewController.swift */; };
 		E55C361A1E38389E0026E90E /* MainAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C36191E38389E0026E90E /* MainAppViewController.swift */; };
 		E5C2A57B1E31378600D35127 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C2A57A1E31378600D35127 /* RootPageViewController.swift */; };
 		E5C2A57D1E31383E00D35127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C2A57C1E31383E00D35127 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		E508ADAA1E414D11004C549B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E53249E41E3E992F0015FF84 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E547B5721E39809E00F2075B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E553E5051E5660A00060E2E3 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		E55C36191E38389E0026E90E /* MainAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAppViewController.swift; sourceTree = "<group>"; };
 		E5C2A57A1E31378600D35127 /* RootPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
 		E5C2A57C1E31383E00D35127 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
@@ -97,14 +99,15 @@
 			children = (
 				242F07BD1E2C4A5500400462 /* AppDelegate.swift */,
 				E5EE01DF1E318F9E00A1EF90 /* SignupViewController.swift */,
+				E553E5051E5660A00060E2E3 /* CameraViewController.swift */,
 				E547B5721E39809E00F2075B /* LoginViewController.swift */,
 				E5C2A57A1E31378600D35127 /* RootPageViewController.swift */,
 				E55C36191E38389E0026E90E /* MainAppViewController.swift */,
 				E508ADAA1E414D11004C549B /* ProfileViewController.swift */,
+				E5C9C7F31E4691A8005FF3CF /* EditProViewController.swift */,
 				2459F0601E2D618400B67E3A /* GoogleService-Info.plist */,
 				249D85731E3047DF00AFF5D1 /* wip_meenagram.entitlements */,
 				E5C2A57C1E31383E00D35127 /* Main.storyboard */,
-				E5C9C7F31E4691A8005FF3CF /* EditProViewController.swift */,
 				242F07C41E2C4A5600400462 /* Assets.xcassets */,
 				2459F0591E2D39F700B67E3A /*  supporting images */,
 				242F07C61E2C4A5600400462 /* LaunchScreen.storyboard */,
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E508ADA91E40278B004C549B /* EditProfileViewController.swift in Sources */,
+				E553E5061E5660A00060E2E3 /* CameraViewController.swift in Sources */,
 				E5EE01E01E318F9E00A1EF90 /* SignupViewController.swift in Sources */,
 				242F07BE1E2C4A5500400462 /* AppDelegate.swift in Sources */,
 				E53249E51E3E992F0015FF84 /* User.swift in Sources */,

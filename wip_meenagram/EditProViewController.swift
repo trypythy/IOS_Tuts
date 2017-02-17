@@ -33,53 +33,109 @@ class EditProViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBAction func cancel(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-   
-    func updateUsersProfile(){
-      //check to see if the user is logged in
-        if let userID = FIRAuth.auth()?.currentUser?.uid{
-        //create an access point for the Firebase storage
+    func updateUsersProfile() {
+        
+        //        ensure user is logged in
+        if let userID = FIRAuth.auth()?.currentUser?.uid {
+            //        create access point to storage
             let storageItem = storageRef.child("profile_images").child(userID)
-        //get the image uploaded from photo library
-            guard let image = profileImageView.image else {return}
-            if let newImage = UIImagePNGRepresentation(image){
-        //upload to firebase storage
+            //        get image from photo library
+            guard let image = profileImageView.image else {
+                return
+            }
+            //        upload to firbase storage
+            if let newImage = UIImagePNGRepresentation(image) {
                 storageItem.put(newImage, metadata: nil, completion: { (metadata, error) in
-                    if error != nil{
+                    //storageRef.put(newImage, metadata: nil, completion: { (metadata, error) in
+                    if error != nil {
                         print(error!)
                         return
                     }
                     storageItem.downloadURL(completion: { (url, error) in
-                        if error != nil{
+                    //self.storageRef.downloadURL(completion: { (url, error) in
+                        if error != nil {
                             print(error!)
                             return
                         }
-                        if let profilePhotoURL = url?.absoluteString{
-                            guard let newUserName  = self.usernameText.text else {return}
-                            guard let newDisplayName = self.displayNameText.text else {return}
-                            guard let newBioText = self.bioText.text else {return}
+                        if let photoURL = url?.absoluteString {
+                            guard let newUserName = self.usernameText.text else {
+                                return
+                            }
+                            guard let newDisplayName = self.displayNameText.text else {
+                                return
+                            }
                             
-                            let newValuesForProfile =
-                            ["photo": profilePhotoURL,
-                             "username": newUserName,
-                             "display": newDisplayName,
-                             "bio": newBioText]
+                            let newValueForProfile = ["photo": photoURL, "username": newUserName,"displayName": newDisplayName]
+                            //        and also to it's database
                             
-                            //update the firebase database for that user
-                            self.databaseRef.child("profile").child(userID).updateChildValues(newValuesForProfile, withCompletionBlock: { (error, ref) in
-                                if error != nil{
-                                    print(error!)
+                            self.databaseRef.child("profile").child(userID).updateChildValues(newValueForProfile, withCompletionBlock: { (error, reference) in
+                                
+                                if error != nil {
                                     return
                                 }
-                                print("Profile Successfully Update")
+                                print("Profile Successfully Upadted")
+                                
                             })
-                            
                         }
+                        
                     })
                 })
-      
+                
+                
             }
+            
         }
+        
     }
+    
+    
+
+//    func updateUsersProfile(){
+//      //check to see if the user is logged in
+//        if let userID = FIRAuth.auth()?.currentUser?.uid{
+//        //create an access point for the Firebase storage
+//            let storageItem = storageRef.child("profile_images").child(userID)
+//        //get the image uploaded from photo library
+//            guard let image = profileImageView.image else {return}
+//            if let newImage = UIImagePNGRepresentation(image){
+//        //upload to firebase storage
+//                storageItem.put(newImage, metadata: nil, completion: { (metadata, error) in
+//                    if error != nil{
+//                        print(error!)
+//                        return
+//                    }
+//                    storageItem.downloadURL(completion: { (url, error) in
+//                        if error != nil{
+//                            print(error!)
+//                            return
+//                        }
+//                        if let profilePhotoURL = url?.absoluteString{
+//                            guard let newUserName  = self.usernameText.text else {return}
+//                            guard let newDisplayName = self.displayNameText.text else {return}
+//                            guard let newBioText = self.bioText.text else {return}
+//                            
+//                            let newValuesForProfile =
+//                            ["photo": profilePhotoURL,
+//                             "username": newUserName,
+//                             "display": newDisplayName,
+//                             "bio": newBioText]
+//                            
+//                            //update the firebase database for that user
+//                            self.databaseRef.child("profile").child(userID).updateChildValues(newValuesForProfile, withCompletionBlock: { (error, ref) in
+//                                if error != nil{
+//                                    print(error!)
+//                                    return
+//                                }
+//                                print("Profile Successfully Update")
+//                            })
+//                            
+//                        }
+//                    })
+//                })
+//      
+//            }
+//        }
+//    }
     
     
     

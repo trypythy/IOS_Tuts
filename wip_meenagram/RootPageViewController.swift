@@ -14,7 +14,7 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDataSour
         
         return [appVC, camVC, messVC]
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

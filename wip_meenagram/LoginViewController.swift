@@ -19,13 +19,14 @@ class LoginViewController: UIViewController {
         
     }
     override func viewDidAppear(_ animated: Bool) {
-        
         if FIRAuth.auth()?.currentUser?.uid != nil{
-    
+            print("User is logged in")
             goToHome()
+        }else{
+            print("NOT logged in")
         }
     }
-
+    
     func login(){
        FIRAuth.auth()?.signIn(withEmail: emailText.text!, password: passwordText.text!, completion: { (user, error) in
         if error != nil{
@@ -38,8 +39,8 @@ class LoginViewController: UIViewController {
     }
     
     func goToHome(){
-       let homePVC = RootPageViewController()
-       self.present(homePVC, animated: true, completion: nil)
+        let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "HomePVC") as! UIPageViewController
+        self.present(homeVC, animated: true, completion: nil)
 
     }
     
