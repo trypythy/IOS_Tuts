@@ -138,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="1352.8" y="162.3688155922039"/>
         </scene>
-        <!--Camera View Controller-->
+        <!--Cam View Controller-->
         <scene sceneID="PAX-bZ-C1o">
             <objects>
-                <viewController restorationIdentifier="CamVC" storyboardIdentifier="CamVC" id="eKQ-zo-kfi" customClass="CameraViewController" customModule="wip_meenagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="CamVC" storyboardIdentifier="CamVC" id="eKQ-zo-kfi" customClass="CamViewController" customModule="wip_meenagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Ig-XV-Ljk"/>
                         <viewControllerLayoutGuide type="bottom" id="CoX-Oh-7M2"/>
@@ -156,13 +156,13 @@
                                 <items>
                                     <barButtonItem title="Photo" id="trJ-Ei-65k">
                                         <connections>
-                                            <action selector="takeAPhoto:" destination="eKQ-zo-kfi" id="3t6-9m-lVf"/>
+                                            <action selector="takePhotoAction:" destination="eKQ-zo-kfi" id="xtg-rb-uFQ"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="9wR-E8-6vg"/>
                                     <barButtonItem title="Gallery" id="9Dg-TZ-e0u">
                                         <connections>
-                                            <action selector="pickFromPhotoLibrary:" destination="eKQ-zo-kfi" id="STn-aq-Jhk"/>
+                                            <action selector="pickPhotoFromGallery:" destination="eKQ-zo-kfi" id="G3Z-SM-le1"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -190,7 +190,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
-                                    <action selector="cancelShareAction:" destination="eKQ-zo-kfi" eventType="touchUpInside" id="IUi-KM-FgC"/>
+                                    <action selector="cancelUpload:" destination="eKQ-zo-kfi" eventType="touchUpInside" id="yUi-vh-x1i"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFZ-Fi-DgP">
@@ -198,15 +198,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Share"/>
                                 <connections>
-                                    <action selector="shareAction:" destination="eKQ-zo-kfi" eventType="touchUpInside" id="uy0-yO-oOn"/>
+                                    <action selector="sharePhoto:" destination="eKQ-zo-kfi" eventType="touchUpInside" id="hDe-7K-IWu"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="captionText" destination="TXX-71-xOY" id="J3x-dO-vol"/>
-                        <outlet property="selectedImageView" destination="S66-L6-LK7" id="dTP-Z2-3DJ"/>
+                        <outlet property="captionTextView" destination="TXX-71-xOY" id="qaX-dw-v86"/>
+                        <outlet property="postImageView" destination="S66-L6-LK7" id="1uh-TF-eC9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W9p-QF-2XZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
